@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    background-color: black;
+    height: 84px;
+}
+
+.flex-container > div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.topnav{
+    overflow: hidden;
+}
+
+.topnav a {
+    float:left;
+}
