@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".topnav a");
-    const currentPath = window.location.pathname;
+document.addEventListener("DOMContentLoaded", function() {
+  const currentUrl = window.location.href;
+  const navLinks = document.querySelectorAll(".topnav a");
 
-    links,forEach(link => {
-        if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active");
-
-        }
-    });
+  navLinks.forEach(link => {
+    // Check if the link's href matches the current URL
+    if (link.href === currentUrl) {
+      link.classList.add("active");
+    }
+  });
 });
