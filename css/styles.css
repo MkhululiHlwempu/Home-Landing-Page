@@ -1,5 +1,5 @@
 @import url('sharpie.css');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('open sans.css');
 
 body {
     font-family: "Open Sans", san-serif;
@@ -133,21 +133,55 @@ body {
 
 .image-container {
   position: relative;
+  text-align: center;
   width: 1280px;
-  height: 880x;
+  height: 880px;
+
  
 }
 
 .hero-background{
-    position: relative;
-    height:100%;
-    width:100%;
+    position: abosulute;
+    color:white;
+    text-align:center;
+    
 
 
 }
+.column{
+    height: 800px;
+}
 
-.content{
-    display:flex;
-    color:black;
-    z-index: 10;
+.row {
+    display: flex;
+    position: absolute;
+    color:white;
+    top: 84px;
+    width: 100%;
+   
+}
+
+.left{
+    width:55%;
+    padding-left: 77px;
+}
+  
+.hero-caption{
+    margin-top: 171px;
+    
+}
+.hero-header{
+    font-family: "Open Sans";
+      font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    font-size: 50.52pt;
+    line-height:49pt;
+    
+}
+.hero-text{
+    font-size: 22pt;
+    font-weight: 500;
+    line-height: 32.37pt;
+    margin-top: 23px;
 }
