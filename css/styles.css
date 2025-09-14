@@ -4,35 +4,36 @@
 body {
     font-family: "Open Sans", san-serif;
     margin: 0;
-    position:relative;
-    
+    position: relative;
+
+
 
 }
 
 
-.flex-container{
-    display:none;
+.flex-container {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    list-style-type:none;
-    position:relative;
-    overflow:hidden;
-    background-color:black;
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
     padding: 0 39px;
     height: 84px;
-    margin-top:0;
+    margin-top: 0;
     z-index: 1;
-    
-    
+
+
 }
 
 
 
 
 
-.nav-logo a{
-    display:flex;
+.nav-logo a {
+    display: flex;
     align-items: center;
     text-decoration: none;
 }
@@ -48,9 +49,9 @@ body {
 
 }
 
-.topnav{
+.topnav {
     overflow: hidden;
-    display:flex;
+    display: flex;
     text-align: center
 }
 
@@ -63,7 +64,7 @@ body {
     text-decoration: none;
     padding: 29px 20px;
     display: inline-block;
-    
+
 
 }
 
@@ -71,24 +72,18 @@ body {
     color: #ffda83;
     border-bottom: 5px solid #ffb200;
     padding-bottom: 5px;
-    cursor:pointer;
-    
-}
-
-.topnav li:active{
-    color: #ffda83;
-    border-bottom: 5px solid #ffb200;
-    padding-bottom: 1px;
-    
+    cursor: pointer;
 
 }
 
 
 
-#login-buttons{
-      
+
+
+#login-buttons {
+
     display: flex;
-    gap:33px;
+    gap: 33px;
 }
 
 
@@ -144,12 +139,12 @@ body {
     min-width: 1280px;
     position: absolute;
     min-height: 100vh;
-    left:0;
+    left: 0;
     top: 0;
-    right:0;
+    right: 0;
     background-image: url('../img/hero-background.png');
     background-size: cover;
-    
+
 }
 
 .column {
@@ -159,34 +154,125 @@ body {
 .row {
     color: white;
     top: 84px;
-    width: 100%;
+
 
 }
 
 .left {
-    width: 55%;
-    padding-left: 77px;
+    
+    width: 54%;
+    text-align: center;
+   
+
+}
+
+.row {
+   
+    top: 84px;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+
 }
 
 .hero-caption {
-    margin-top: 254px;
-    border: 1px solid #333;
+    position: absolute;
+    left: 0;
+    padding-top: 165px;
+    padding-left: 20px;
+
+
+
+
 
 }
 
 .hero-header {
     font-family: "Open Sans";
-    font-weight: bold;
+    font-weight: bolder;
     font-style: normal;
     font-display: swap;
-    font-size: 50.52pt;
-    line-height: 49pt;
+    font-size: 55px;
+    line-height: 43.45pt;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 3px white;
+
+
+
 
 }
 
 .hero-text {
-    font-size: 22pt;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 32.37pt;
-    margin-top: 23px;
+    line-height: 36px;
+    margin-top: 10px;
+
+}
+
+
+
+.get-started {
+    background-color: #ffb200;
+    color: black;
+}
+
+.browse-menu {
+    color: white;
+    background-color: black;
+
+}
+
+#hero-caption-buttons button {
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    width: 203px;
+    height: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+#hero-caption-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+   
+}
+
+.right{
+    position:relative;
+    float:right;
+    width: 47%;
+
+}
+
+.hero-image{
+   
+  
+}
+#hero-burger{
+position:absolute;
+top:102px;
+left:0;
+float:right
+
+
+}
+#hero-fries{
+z-index:-1;
+top:0;
+float:right
+
+}
+
+#hero-lettuce{
+position:absolute;
+z-index:1;
+margin-left:0;
+bottom:0;
+
+
 }
