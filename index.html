@@ -5,46 +5,77 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Landing Page</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+
 
     <!-- Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="./assets/css/screens/smallscreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="./assets/css/screens/largescreen.css">
+
+    <!--Icon Links-->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+
 
 </head>
 
 
 
 <body>
-    <div class="flex-container">
-        <div class="nav-logo">
-            <a href="#"><img src="./img/logo.png"><span>QUICK BITE</span></a>
-        </div>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" id="lg-menu-logo" class="nav__logo"><img src="./assets/img/logo.png"><span>QUICK BITE</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <a href="#" id="show-menu-logo" class="nav__logo"><img src="./assets/img/logo.png"><span>QUICK
+                        BITE</span></a>
+                <ul class="nav__list center">
+                    <li class=" nav__item active"><a href="#index.html" class="nav__link"><span>Home</span></a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link"><span>Menu</span></a></li>
+                    <li class="nav__item"><a href="#locations" class="nav__link"><span>Locations</span></a></li>
+                    <li class="nav__item"><a href="#order-online" class="nav__link"><span>Order-Online</span></a></li>
+                    <li class="nav__item"><a href="#about.us" class="nav__link"><span>About Us</span></a></li>
+                </ul>
 
-        <ul class="topnav center">
-            <li class="active"><a href="#home"><span>Home</span></a></li>
-            <li><a href="#menu"><span>Menu</span></a></li>
-            <li><a href="#locations"><span>Locations</span></a></li>
-            <li><a href="#order-online"><span>Order</span></a></li>
-            <li><a href="#about.us"><span>About</span></a></li>
-        </ul>
-
-        <div id="login-buttons">
-            <button type="button" class="login">Login</button>
-            <button type="button" class="signup">Signup</button>
-
-        </div>
-    </div>
+                <!--Close button for sm-nav-->
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
 
 
+                <div class="login__buttons">
+                    <button type="button" class="login">Login</button>
+                    <button type="button" class="signup">Signup</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            </div>
+
+            <!--Toggle button for sm-nav-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
 
 
     <section id="hero">
         <div class="row">
-            <div class="hero-caption center column left">
+            <div class="hero-caption column left">
                 <div class="hero-header">
-                    Crafted&nbsp;with&nbsp;Passion.
+                    Crafted&nbsp;with&nbsp;Passion.<br>
                     Served with Soul.
                 </div>
                 <p class="hero-text">
@@ -58,16 +89,22 @@
                 </div>
 
             </div>
-            <div class="column right">
-                <img id="hero-fries" src="./img/hero-fries.png" alt="Burger">
-                <img id="hero-burger" src="./img/hero-image.png" alt="French Fries">
+            <div id="hero-right-column" class="column right">
+                <img id="hero-fries" src="./assets/img/hero-fries.png" alt="Burger">
+                <img id="hero-burger" src="./assets/img/hero-image-sm.png" alt="French Fries">
             </div>
 
         </div>
-        <img id="hero-lettuce" src="./img/hero-lettuce.png" alt="Lettuce">
+        <img id="hero-lettuce" src="./assets/img/hero-lettuce.png" alt="Lettuce">
 
     </section>
 
+    <section id="menu">
+        <h1>Menu</h1>
+    </section>
+
+
+    <script src="./js/main.js"></script>
 
 
 

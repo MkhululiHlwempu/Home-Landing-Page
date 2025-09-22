@@ -1,0 +1,172 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+
+    margin-inline: 1.5rem;
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 2;
+}
+
+.nav {
+    position: relative;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    padding:0 19px
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav__logo img {
+    filter: invert(100%);
+}
+
+.nav__logo span {
+    color: white;
+    font-family: "Sharpie-Black";
+    font-size: 22.7pt;
+}
+
+.nav__menu {
+    display:flex;
+    width:100%;
+}
+
+.nav__toggle {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list {
+    flex-direction: row;
+    gap: 39px;
+
+}
+
+.nav__link {
+    position: relative;
+    color: white;
+    font-size: 16pt;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity .4s
+}
+
+
+.nav__link span {
+    position: relative;
+    transition: margin .4s;
+}
+
+.nav__link span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 5px;
+    background-color: #ffb200;
+    transition: width .4s ease-out;
+}
+
+/*hover*/
+.nav__link:hover span {
+    margin-bottom: 10px;
+    color: #ffda83;
+}
+
+.nav__link:hover span::after {
+    width: 100%;
+}
+
+
+/* Sibling fade anitmarion */
+.nav__list:has(.nav__link:hover) .nav__link:not(:hover) {
+    opacity: .4;
+}
+
+.nav__close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    display: flex;
+    color: white;
+    font-size: 25pt;
+    cursor: pointer;
+    
+}
+
+
+.login__buttons {
+    display: flex;
+    gap: 33px;
+}
+
+
+.login__buttons button {
+    font-size: 18.84pt;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.sm__nav_login {
+    display: flex;
+    flex-direction: row;
+}
+
+.sm__login,.sm__signup {
+    text-decoration: none;
+    color:#ffb200;
+    font-size: 16pt;
+    transition: transform .4s;
+}
+
+.sm__login,
+.sm__signup:hover {
+    transform: translateY(-.25rem);
+}
+
+
+.login {
+    background-color: #ffb200;
+    border: none;
+}
+
+.signup {
+    color: #ffb200;
+    background-color: transparent;
+    border: 2px solid #ffb200;
+}

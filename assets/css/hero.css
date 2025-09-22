@@ -1,0 +1,124 @@
+/* Hero Section */
+
+
+
+
+#hero {
+    position: relative;
+    left: 0;
+    top: 116px;
+    right: 0;
+   
+}
+
+
+
+
+
+
+
+.row {
+    color: white;
+    position: relative;
+    overflow: hidden
+}
+
+.hero-caption {
+    display: flex;
+    flex-direction: column;
+    
+    
+  
+
+}
+
+.hero-header {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 3px white;
+
+}
+
+.hero-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+}
+
+
+
+.get-started {
+    background-color: #ffb200;
+    color: black;
+}
+
+.browse-menu {
+    color: white;
+    background-color: black;
+
+}
+
+#hero-caption-buttons button {
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+#hero-caption-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+
+}
+
+
+
+
+
+
+#hero-lettuce {
+    display: none;
+    z-index: 1;
+    margin-left: 0;
+
+}
+
+
+.nav-sm-icon {
+    display: none;
+}
+
+.nav-sm-icon {
+    display: none;
+}
+
+.nav-sm-icon li a {
+    font-size: 16pt;
+    color: #f1f1f1;
+    padding: 15px 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+#menu {
+    position: absolute;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {}

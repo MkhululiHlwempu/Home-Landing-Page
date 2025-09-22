@@ -1,0 +1,33 @@
+@import url('sharpie.css');
+@import url('open sans.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Open Sans", san-serif;
+    margin: 0;
+    position:relative;
+    
+
+}
+
+
+
+
+
+
+
+
+
+#menu{
+    display:none;
+}

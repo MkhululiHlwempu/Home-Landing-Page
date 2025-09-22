@@ -1,0 +1,106 @@
+/*large screen*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav__menu {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__toggle,
+.nav__close {
+    display: none;
+}
+
+.nav__link {
+    font-size: 16pt;
+}
+
+
+.nav__list {
+    flex-direction: row;
+
+
+}
+
+
+.login__buttons {
+    float: right;
+}
+
+.sm__nav__login {
+    display: none;
+}
+
+#lg-menu-logo {
+    display: none;
+}
+
+
+/*Hero Section*/
+#hero {
+    min-width: 100vh;
+    min-height: 100vh;
+     background-image: url('../../img/hero-background.png');
+}
+
+.hero-caption{
+    position: absolute;
+    left:0;
+    padding-top: 165px;
+    padding-left: 20px;
+    gap:20px
+}
+
+.hero-header{
+    font-size: 55px;
+    line-height: 43.45pt;
+}
+.row {
+
+    top: 0;
+    height: 100vh;
+}
+
+.left {
+    width: 54%;
+    text-align: center;
+}
+
+.right{
+    position:relative;
+    float:right;
+    width: 47%;
+
+}
+
+#hero-burger{
+position:absolute;
+top:102px;
+left:0;
+float:right
+
+
+}
+#hero-fries{
+z-index:-1;
+top:0;
+float:right
+
+}
+
+.hero-caption {
+    height: 884px;
+    border: 5px solid red;
+
+}
+
+#hero-caption-buttons button {
+    width: 203px;
+    height: 60px;
+    
+}
