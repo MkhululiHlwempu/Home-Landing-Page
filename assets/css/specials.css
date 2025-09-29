@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/opensans/OpenSans-ExtraBold.eot');
+    src: url('./fonts/opensans/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/opensans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('./fonts/opensans/OpenSans-ExtraBold.woff') format('woff'),
+        url('./fonts/opensans/OpenSans-ExtraBold.svg#./fonts/opensans/OpenSans-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+#specials {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 116px;
+    border: 5px solid red;
+    height: 800px;
+    min-width: 100vh;
+}
+
+.grid__container {
+    position: absolute;
+    padding-top: 195px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 43px;
+
+
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+
+    border-radius: 44px;
+    font-size: 70pt;
+    color: white;
+
+
+}
+
+.item1 {
+    position: relative;
+    background-color: #7a2048;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+
+
+    width: 375.68px;
+    height: 531.45px;
+    grid-row: 1 / span 2;
+
+}
+
+.item1__abstract {
+    filter: invert(100%);
+}
+
+.item1__header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+    top: 61px;
+
+}
+
+
+.item1__header {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+
+.item1__header1 {
+    text-align: center;
+    font-size: 27.09px;
+
+
+
+}
+
+.item1__header2 {
+    color:#ffb200 ;
+    font-size: 32pt;
+
+
+
+}
+
+.item1__image{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.item2 {
+    width: 375.71px;
+    height: 293.07px;
+    background-color: #f60000;
+
+    grid-column: 2;
+}
+
+.item3 {
+    width: 375.71px;
+    height: 293.07px;
+    background-color: black;
+
+    grid-column: 3;
+}
+
+.item4 {
+    width: 788.57px;
+    height: 206.39px;
+    background-color: #000031;
+
+    grid-column: 2 / span 2
+}
