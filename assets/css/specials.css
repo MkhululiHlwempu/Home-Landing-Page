@@ -23,7 +23,7 @@
 
 .grid__container {
     position: absolute;
-    padding-top: 195px;
+    padding-top: 110px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 43px;
@@ -124,7 +124,6 @@
 }
 
 .item2__header {
-    font-family: "Open Sans";
     font-weight: bold;
     font-display: swap;
     font-style: normal;
@@ -134,37 +133,119 @@
     right: 28px;
     z-index: 1;
 
+
     position: absolute;
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 
 .item2__header1 {
     font-size: 25px;
-    color:#ffb200;
+    color: #ffb200;
 }
 
-.item2__header2{
+.item2__header2 {
     font-size: 22.7px;
     letter-spacing: 8px;
     font-weight: 600;
 }
 
+.item2__header3 {
+    font-size: 51px;
+    hyphens: auto;
+    hyphenate-character: "-";
+}
 
+.item2__header4 {
+    font-size: 38px;
+
+}
+
+.item2__header4 span {
+    color: #ffb200;
+
+}
+
+.item2__header3,
+.item2__header4 {
+    line-height: 43px;
+}
 
 .item3 {
+    position: relative;
     width: 375.71px;
     height: 293.07px;
-    background-color: black;
 
     grid-column: 3;
 }
 
+.item3__header {
+    position: absolute;
+    width: 216px;
+    left: 22px;
+    top: 40px;
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item3__header1 {
+    font-size: 44px;
+    line-height: 50px;
+}
+
+.item3__header2 {
+    font-size: 31px;
+    color: #ffb200;
+}
+
+
+
+
 .item4 {
+    position: relative;
     width: 788.57px;
     height: 206.39px;
     background-color: #000031;
 
-    grid-column: 2 / span 2
+    grid-column: 2 / span 2;
+       
+    
+}
+
+.item4__image {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+}
+
+.item4__header {
+    top: 35px;
+    right: 60px;
+    position: absolute;
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item4__header1{
+    font-size: 30px;
+    line-height: 29px;
+
+}
+
+.item4__header2{
+    font-size: 89px;
+    line-height: 100px;
 }
